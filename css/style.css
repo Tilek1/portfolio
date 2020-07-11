@@ -228,6 +228,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    visibility: hidden;
 }
 
 .second-left {
@@ -293,6 +294,7 @@ body {
 .second-right.active {
     transform: translateY(0);
     transition: .7s;
+    visibility: visible;
 }
 
 .aboutPage {
@@ -377,7 +379,9 @@ body {
 }
 
 .footer {
-    
+    position: fixed;
+    bottom:0;
+    left: 0;
     width: 100%;
     text-align: center;
     padding: 25px 0;
@@ -582,6 +586,28 @@ body {
     background-color: rgb(73, 73, 73);
     transition: .7s;
 }
+.second-left, .second-right {
+    position: absolute;
+    display: none;
+    animation-delay: 1s;
+    
+}
+.second-left.active, .second-right.active {
+    display: flex;
+    animation-delay: 1s;
+}
+
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        display: block;
+        
+    }
+    .aboutPage {
+        overflow: auto;
+        height: 100vh;
+    }
 
 }
 
@@ -635,7 +661,9 @@ body {
     .contact-cards {
         margin-bottom: 65px;
     }
-    .footer {
-        margin-top: 170px;
+    
+    .about-title {
+        margin-top: 50px;
     }
+    
 }
