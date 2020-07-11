@@ -665,5 +665,9 @@ body {
     .about-title {
         margin-top: 50px;
     }
+    .contact-card {
+        padding: 25px;
+        font-size: 20px;
+    }
     
 }
