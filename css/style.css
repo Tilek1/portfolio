@@ -669,5 +669,8 @@ body {
         padding: 25px;
         font-size: 20px;
     }
+    .contact-cards {
+        margin-bottom: 100px;
+    }
     
 }
